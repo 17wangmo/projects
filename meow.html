@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        #home {
+            background-image: url('picture/bac.jfif');
+            background-size: cover;
+            background-position: center;
+             background-attachment: fixed;
+        }
+
+
+        #about {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 10%;
+            text-align: left;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            max-width: 900px;
+        }
+
+        .about-content img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #f4f4f4;
+        }
+
+        .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Experience Section */
+        #experience {
+            background-color: white;
+        }
+
+        .experience-item {
+            margin: 20px 0;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #333;
+            color: white;
+            padding: 50px;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .contact-form button {
+            background-color: #555;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #777;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Wangmo, an enthusiastic IT student passionate about technology and problem-solving. </p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="about-content">
+            <img src="picture/image.jfif" alt="My Photo">
+            <div>
+                <h2>About Me</h2>
+                <p>I am Wangmo, a second-year, second-semester student at the College of Science and Technology. 
+                    I have always had a strong passion for studying and an unquenchable curiosity about the world around me.
+                     Whether it is exploring new topics in my field of study or diving into subjects that pique my interest, 
+                     I love the process of learning and expanding my knowledge. The excitement of discovering something new
+                    motivates me to push further in my academic journey. I believe that education is a lifelong process, and
+                    I am always on the lookout for new opportunities to grow, both in and outside of the classroom. Exploring
+                    new things—whether through research, conversations, or hands-on experiences—is something I truly cherish.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>First Project: Student Details Database for Teachers</h3>
+                <p>For my first project, I developed a system to help teachers easily manage student information by punching 
+                    the student details into a database. The system was designed to streamline the process of storing and retrieving
+                    essential data, such as student names, grades, and attendance records. By creating a user-friendly interface, 
+                    I ensured that teachers could access and update the information efficiently. This project gave me valuable hands-on
+                    experience with databases and data management, enhancing my understanding of how to build systems that serve real-world needs.</p>
+            </div>
+            <div class="project">
+                <h3>Second Project: Website for My College</h3>
+                <p>For my second project, I worked on designing and developing a website for my college. The website aimed to serve as a central
+                     hub for students, faculty, and prospective students to access important information about the college. I focused on creating 
+                     a visually appealing, responsive design that would work well on both desktop and mobile devices. The website featured sections 
+                     for course offerings, events, news, and contact information, among other essential resources. This project not only strengthened
+                     my web development skills but also taught me the importance of user-centered design and accessibility.</p>
+            </div>
+            <div class="project">
+                <h3>Third Project: Research on Computer Architecture</h3>
+                <p>For my third project, I conducted in-depth research on computer architecture. I explored various aspects of how modern 
+                    computer systems are designed, including CPU architecture, memory hierarchy, and the interaction between hardware and 
+                    software. This research helped me develop a deeper understanding of the components that make up a computer system and 
+                    how they work together to execute tasks efficiently. The project involved reading academic papers, analyzing case studies,
+                     and presenting my findings in a comprehensive report. It was an intellectually challenging project that allowed me to 
+                    delve into the technical details of computer engineering.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+        <h3>Education</h3>
+            
+        <p><strong>College of Science and Technology</strong> (Present)<br>
+            Currently studying in the second year, second semester, at the College of Science and Technology.</p>
+
+        <p><strong>Ugyen Academy</strong> (Grades 11-12)<br>
+            Completed secondary education at Ugyen Academy, where I gained a solid foundation in academic subjects.</p>
+
+        <p><strong>Gongzim Central School</strong> (Grades 9-10)<br>
+              Attended Gongzim Central School for my high school years, where I developed my academic skills and became more focused on my future studies.</p>
+
+        <p><strong>Khatsho Lower Secondary School</strong> (Grades 5-8)<br>
+             Continued my education at Khatsho Lower Secondary School, where I built the foundation for my higher studies.</p>
+
+        <p><strong>Chundu Central School</strong> (Grades PP-4)<br>
+             Started my educational journey at Chundu Central School, where I developed essential skills in the early years of my education.</p>
+
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <p><strong>Phone:</strong> 77432798</p>
+    <p><strong>Email:</strong> 02230159.cst@rub.edu.bt</p>
+    </section>
+
+
+</body>
+</html>
